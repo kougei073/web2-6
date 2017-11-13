@@ -27,6 +27,11 @@
 			scene.add( cube );
 			
 			camera.position.z = 5;
+			
+			var light = new THREE.DirectionalLight(0xFFFFFF);
+			light.intensity = 2;
+			light.position.set(1, 1, 1);
+			scene.add(light);
 
 			var animate = function () {
 				requestAnimationFrame( animate );
