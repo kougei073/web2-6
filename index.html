@@ -43,8 +43,8 @@
 				requestAnimationFrame( render );
 				
 				var delta_time = clock.getDelta();
-				cube.rotation.x += 0.1 * delta_time;
-				cube.rotation.y += 0.2 * delta_time;
+				cube.rotation.x += 1 * delta_time;
+				cube.rotation.y += 2 * delta_time;
 
 				renderer.render(scene, camera);
 			};
