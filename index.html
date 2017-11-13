@@ -26,6 +26,10 @@
 				  camera.aspect = window.innerWidth / window.innerHeight;
 				  camera.updateProjectionMatrix()
 			  }, false );
+			
+			var light = new THREE.DirectionalLight(0xffffff);
+			light.position.set(0, 1, 0);
+			scene.add( light );
 
 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 			var material = new THREE.MeshBasicMaterial( { color:0x0000FF} );
