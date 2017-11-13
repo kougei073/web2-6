@@ -28,14 +28,14 @@
 			  }, false );
 			
 			var light = new THREE.DirectionalLight(0xcccccc);
-			light.position.set(0, 100, 30);
+			light.position.set(1, 1, 1);
 			scene.add( light );
 
 			var loader = new THREE.TextureLoader();
 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 			var material = new THREE.MeshStandardMaterial( {
-				color:0x0000FF/*,
-				map: loader.load('dice.jpg')*/});
+				color:0x0000FF,
+				map: loader.load('dice.jpg')});
 			var cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 			
