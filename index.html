@@ -34,8 +34,8 @@
 			var loader = new THREE.TextureLoader();
 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 			var material = new THREE.MeshBasicMaterial( {
-				color:0x0000FF,
-				map: loader.load('dice.jpg')});
+				color:0x0000FF/*,
+				map: loader.load('dice.jpg')*/});
 			var cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 			
